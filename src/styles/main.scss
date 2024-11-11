@@ -1,0 +1,189 @@
+@import 'variables';
+
+// Global Styles
+body {
+  font-family: $font-family;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Header
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $primary-color;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 1.5rem;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $primary-color;
+  color: $text-color;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .sitemap,
+  .legal,
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social a {
+    font-size: 1.2rem;
+  }
+}
+
+// Home Page
+.home-page {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: $primary-color;
+
+    .hero-content {
+      flex: 1;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: $btn-bg-color;
+        color: $btn-text-color;
+        padding: $btn-padding;
+        border-radius: $btn-border-radius;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 10%);
+        }
+      }
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .featured-robots {
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .robot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+  }
+}
+
+// Collections Page
+.collections-page {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: $primary-color;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .robot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+// Robot Card
+.robot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
