@@ -13,7 +13,8 @@ const Header = () => {
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Community</a></li>
-          <li  className='collection-btn'><Link to="/collections">Collection</Link></li>
+          <Link to="/collections">
+          <li  className='collection-btn'>Collection</li></Link>
         </ul>
       </nav>
     </header>

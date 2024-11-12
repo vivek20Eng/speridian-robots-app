@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import Collections from './pages/Collections';
 import './styles/main.scss';
 import './styles/main.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const App = () => {
   return (
     <Router>

@@ -20,7 +20,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="features-section">
+    <section className="features-section" data-aos="fade-in" data-aos-duration="1000">
       <div className="container">
         <div className="features-grid">
           {features.map((feature, index) => (

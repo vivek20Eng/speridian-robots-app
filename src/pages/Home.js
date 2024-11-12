@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <Header />
-      <main>
+      <main data-aos="fade-in" data-aos-duration="1000">
         <section className="hero">
           <div className="hero-content">
             <h1>Made with <span>heart</span>, by a <span>robot</span>.</h1>
