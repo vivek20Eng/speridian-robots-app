@@ -50,7 +50,7 @@ const Home = () => {
       <main>
         <section className="hero">
           <div className="hero-content">
-            <h1>Made with heart, by a robot.</h1>
+            <h1>Made with <span>heart</span>, by a <span>robot</span>.</h1>
             <p>Collect unique art pieces entirely made by an android with human feelings</p>
             <Link to="/collections" className="btn">Discover More Collections</Link>
           </div>
