@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RobotCard from '../components/RobotCard';
+import FeaturesSection from '../components/FeaturesSection';
 
 const Collections = () => {
   const [robots, setRobots] = useState([]);
@@ -22,19 +23,7 @@ const Collections = () => {
   return (
     <div className="collections-page">
       <Header />
-      <main>
-        <section className="hero">
-          <div className="hero-content">
-            <h1>Robots Collection</h1>
-            <p>Discover our unique collection of golden Robot sculptures</p>
-          </div>
-        </section>
-        <section className="robot-grid">
-          {robots.map((robot) => (
-            <RobotCard key={robot.id} robot={robot} />
-          ))}
-        </section>
-      </main>
+      <FeaturesSection/>
       <Footer />
     </div>
   );

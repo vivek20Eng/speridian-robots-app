@@ -810,6 +810,8 @@ header {
 
 
 
+
+
 // Responsive Design
 
 
@@ -1078,7 +1080,7 @@ header {
     }
 
     .robot-card {
-      background: rgba(255, 255, 255, 0.05);
+      // background: rgba(255, 255, 255, 0.05);
       padding: 2rem;
       border-radius: 8px;
       transition: transform 0.3s ease;
@@ -1210,3 +1212,6 @@ header {
     scroll-behavior: auto !important;
   }
 }
+
+
+

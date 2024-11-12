@@ -6,8 +6,8 @@ const Header = () => {
     <header>
         {/* <section className='logo-sec'> */}
 
-      <div className="logo"><a href="">      <img src="/assets/Images/Logo-header.svg" alt="logo"/>
-      </a></div>
+      <div className="logo"><Link to="/">      <img src="/assets/Images/Logo-header.svg" alt="logo"/>
+      </Link></div>
         {/* </section> */}
       <nav>
         <ul>

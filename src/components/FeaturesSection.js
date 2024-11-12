@@ -3,17 +3,17 @@ import React from 'react';
 const FeaturesSection = () => {
   const features = [
     {
-      icon: 'assets/Images/icon-1.svg',
+      icon: '/assets/Images/icon-1.svg',
       title: 'Unique Creations',
       description: 'Each golden Robot is a one-of-a-kind masterpiece, created with precision and care by the robot artist.'
     },
     {
-      icon: 'assets/Images/icon-2.svg',
+      icon: '/assets/Images/icon-2.svg',
       title: 'Cutting-Edge Technology',
       description: 'The artist combines artificial intelligence and robotics to produce art that blurs the line between man and machine.'
     },
     {
-      icon: 'assets/Images/icon-3.svg',
+      icon: '/assets/Images/icon-3.svg',
       title: 'Exclusive Membership',
       description: 'Each collector gains access to an exclusive club, enjoying unique benefits and early previews of upcoming collections.'
     }
