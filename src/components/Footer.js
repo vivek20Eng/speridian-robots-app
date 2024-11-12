@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" data-aos="fade-up" data-aos-duration="800">
       <div className="footer-top">
         <div className="newsletter">
           <h3>Join the newsletter to keep<br />up with new collections.</h3>

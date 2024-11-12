@@ -28,7 +28,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="accordion-container">
+    <div className="accordion-container" data-aos="fade-in" data-aos-duration="1000">
       <h1>Featured Robots</h1>
       {accordionData.map((item, index) => (
         <div 

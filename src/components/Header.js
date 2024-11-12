@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header>
+    <header data-aos="fade-down" data-aos-duration="800">
         {/* <section className='logo-sec'> */}
 
       <div className="logo"><Link to="/">      <img src="/assets/Images/Logo-header.svg" alt="logo"/>

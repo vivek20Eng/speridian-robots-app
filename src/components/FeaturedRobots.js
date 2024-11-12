@@ -23,7 +23,7 @@ const FeaturedRobots = () => {
   ];
 
   return (
-    <section className="featured-robots">
+    <section className="featured-robots" data-aos="fade-in" data-aos-duration="1000">
       <div className="container">
         <h2 className="section-title">Featured Robots</h2>
         <div className="robots-grid">
