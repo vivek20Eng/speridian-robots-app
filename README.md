@@ -1,5 +1,5 @@
 ![Project Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-## 🌐 Live link: [Live Demo](https://product-dashboard-task.vercel.app/)
+## 🌐 Live link: [Live Demo](https://speridian-robots-app.vercel.app/)
 
 # Speridian Robots App
 
@@ -18,7 +18,6 @@ This is a React-based web application for showcasing a collection of unique robo
 - Smooth transitions and animations
 - Interactive heatmap visualization for user retention data
 - Customizable robot collections
-- Newsletter subscription functionality
 
 ## Technologies Used
 
