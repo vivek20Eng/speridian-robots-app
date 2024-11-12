@@ -69,14 +69,14 @@ const Home = () => {
                       }}
                     />
                   </div>
-                  <div className={`hand-container ${isTransitioning ? 'transitioning' : ''}`}>
+                  {/* <div className={`hand-container ${isTransitioning ? 'transitioning' : ''}`}>
                     <img 
                       className="hand"
                       src="/public/assets/Images/Robo-Banner-1.svg"
                       alt="Robot Hand"
                       
                     />
-                  </div>
+                  </div> */}
                 </>
               )}
             </section>
