@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* variables */
+:root {
+  --primary-text-color: #FFFFFF; /* White text color */
+  --primary-background-color: #09091d; 
+  --primary-linear-bg: #080818; 
+  --button-gradient: linear-gradient(to right, #ff26ff, #f66111);
+  --accent-color-1: #FF4DFF; /* Pink accent color 1 */
+  --accent-color-2: #FF26FF; /* Pink accent color 2 */
+  --gradient-start: #080818;
+  --gradient-end: #0f0f2d;
+  --gradient-angle: 45deg;
+}
+
+body{
+  /* max-width: auto;
+  margin: auto; */
+  background: var(--primary-background-color);
+  background: linear-gradient(var(--gradient-angle), var(--gradient-start), var(--gradient-end));
+
+}
+
+header a{
+  color: white !important;
+}
+.hero-content .btn {
+ background: var(--button-gradient) ;
+}
+header nav .collection-btn{
+  background: var(--button-gradient) ;
+padding: 1em 2em ;
+}
+.home-page .featured-robots h2{
+  color: var(--primary-text-color);
+}

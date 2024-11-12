@@ -2,6 +2,7 @@
 $primary-color: #fff;
 $secondary-color: #ff3385;
 $text-color: #333;
+$background: linear-gradient(var(--gradient-angle), var(--gradient-start), var(--gradient-end));
 
 // Fonts
 $font-family: 'Helvetica Neue', sans-serif;
@@ -9,5 +10,5 @@ $font-family: 'Helvetica Neue', sans-serif;
 // Buttons
 $btn-bg-color: $secondary-color;
 $btn-text-color: $primary-color;
-$btn-padding: 0.75rem 2rem;
+$btn-padding: 1rem 2rem;
 $btn-border-radius: 4px;
