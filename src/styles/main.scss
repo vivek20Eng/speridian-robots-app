@@ -1039,6 +1039,7 @@ header {
     min-height: 80vh;
     max-width: 1200px;
     margin: auto;
+    overflow-x: hidden;
 
     @include respond-to(lg) {
       flex-direction: column;
