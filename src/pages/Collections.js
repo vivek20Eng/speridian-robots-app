@@ -1,32 +1,89 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import RobotCard from '../components/RobotCard';
-import FeaturesSection from '../components/FeaturesSection';
 
-const Collections = () => {
-  const [robots, setRobots] = useState([]);
-
-  useEffect(() => {
-    // Fetch robot data from an API or sample data
-    setRobots([
-      { id: 1, name: 'Robot 1', image: '/robot1.png' },
-      { id: 2, name: 'Robot 2', image: '/robot2.png' },
-      { id: 3, name: 'Robot 3', image: '/robot3.png' },
-      { id: 4, name: 'Robot 4', image: '/robot4.png' },
-      { id: 5, name: 'Robot 5', image: '/robot5.png' },
-      { id: 6, name: 'Robot 6', image: '/robot6.png' },
-    ]);
-  }, []);
+const RobotCollections = () => {
+  const robots = [
+    {
+      id: 1,
+      name: 'Wealthy D.',
+      price: 1200,
+      description: 'Wealth isn\'t everything, but this Robot exudes sophistication and calm. A true symbol of opulence.',
+      image: 'assets/Images/Robo-1.svg',
+    },
+    {
+      id: 2,
+      name: 'Cerberus D.',
+      price: 920,
+      description: 'With three heads and one brain, this Robot embodies the mythological guardian with a quirky twist.',
+      image: 'assets/Images/Robo-2.svg',
+    },
+    {
+      id: 3,
+      name: 'Ninja D.',
+      price: 850,
+      description: 'Stealthy and skilled, this Robot is a master of disguise. An intriguing addition to any collection.',
+      image: 'assets/Images/Robo-3.svg',
+    },
+    {
+        id: 1,
+        name: 'Wealthy D.',
+        price: 1200,
+        description: 'Wealth isn\'t everything, but this Robot exudes sophistication and calm. A true symbol of opulence.',
+        image: 'assets/Images/Robo-1.svg',
+      },
+      {
+        id: 2,
+        name: 'Cerberus D.',
+        price: 920,
+        description: 'With three heads and one brain, this Robot embodies the mythological guardian with a quirky twist.',
+        image: 'assets/Images/Robo-2.svg',
+      },
+      {
+        id: 3,
+        name: 'Ninja D.',
+        price: 850,
+        description: 'Stealthy and skilled, this Robot is a master of disguise. An intriguing addition to any collection.',
+        image: 'assets/Images/Robo-3.svg',
+      },
+  ];
 
   return (
-    <div className="collections-page">
+    <>
       <Header />
-      <FeaturesSection/>
+      <div className="robot-collections" data-aos="fade-in" data-aos-duration="1000">
+        <h1>Robots Collections</h1>
+        
+        <div className="robot-grid">
+          {robots.map((robot) => (
+            <div key={robot.id} className="robot-card">
+              <div className="robot-image">
+                <img 
+                  src={robot.image} 
+                  alt={robot.name}
+                  onError={(e) => {
+                    console.error(`Failed to load image: ${e.target.src}`);
+                    e.target.src = '/public/assets/Images/fallback-robot.svg'; 
+                  }}
+                />
+              </div>
+              
+              <h2>{robot.name}</h2>
+              
+              <p className="description">{robot.description}</p>
+              
+              <div className="price">$ {robot.price}</div>
+              
+              <button className="check-out-btn">
+                Check it Out
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default Collections;
+export default RobotCollections;

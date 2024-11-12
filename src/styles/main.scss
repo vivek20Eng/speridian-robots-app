@@ -190,6 +190,7 @@ header {
     }
   }
 
+  
 
   // featured-robots.scss
   .featured-robots {
@@ -809,6 +810,132 @@ header {
 }
 
 
+// RobotCollections.scss
+
+.robot-collections {
+  min-height: 100vh;
+  background: $background;
+  padding: 4rem 2rem;
+  color: $primary-color;
+  font-family: $font-family;
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: $primary-color;
+  }
+
+  .robot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .robot-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+    .robot-image {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1.5rem;
+      position: relative;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        filter: blur(4px);
+        border-radius: 50%;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+      max-width: 280px;
+    }
+
+    .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .check-out-btn {
+      background-color: $btn-bg-color;
+      color: $btn-text-color;
+      padding: $btn-padding;
+      // border-radius: $btn-border-radius;
+      border: none;
+      cursor: pointer;
+      font-family: $font-family;
+      font-size: 1rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($btn-bg-color, 10%);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .robot-collections {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .robot-grid {
+      gap: 2rem;
+    }
+
+    .robot-card {
+      .robot-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
 
 
 
@@ -838,16 +965,7 @@ $breakpoints: (
   }
 }
 
-// Global Styles
-body {
-  font-family: $font-family;
-  color: $text-color;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #1a1047, #2d1b69);
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+
 
 // Header
 header {
@@ -1212,6 +1330,5 @@ header {
     scroll-behavior: auto !important;
   }
 }
-
 
 
